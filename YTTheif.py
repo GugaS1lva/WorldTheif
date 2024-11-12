@@ -22,7 +22,7 @@ def baixar_video(url):
         print("Deu um erro:", e)
 
 # Download single videos.
-urls = "https://www.youtube.com/shorts/to2ZQSVzWqU"
+urls = ["https://www.youtube.com/shorts/to2ZQSVzWqU"]
 
 # Download multiple videos.    
 # urls = [
