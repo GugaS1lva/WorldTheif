@@ -36,6 +36,12 @@ No terminal ou prompt de comando, use o seguinte comando para instalar o `yt_dlp
 pip install yt_dlp
 ```
 
+Ou, se quiser instalar a lib no seu ambiente Venv e evitar que ela seja instalada globalmente, vá no terminal ou prompt de comando e use o seguinte comando para instalar o `yt_dlp`:
+
+```bash
+python -m pip install yt-dlp
+```
+
 ### 3. Rodar o Projeto
 
 #### Baixar vídeos do YouTube
