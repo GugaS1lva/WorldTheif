@@ -1,6 +1,6 @@
 # WorldTheif - Baixador de Vídeos
 
-Um projeto de automação em Python para baixar vídeos do YouTube e Instagram com facilidade, usando a biblioteca `yt_dlp`.
+Um projeto de automação em Python para baixar vídeos do YouTube e Instagram com facilidade, usando a biblioteca yt_dlp.
 
 ## Propósito
 
@@ -8,7 +8,7 @@ Este projeto permite o download de vídeos de duas das plataformas mais populare
 
 ## Como Funciona
 
-Cada script verifica a URL e baixa o vídeo na melhor qualidade disponível. Os scripts são separados para facilitar o uso específico para cada plataforma:
+Cada script verifica a URL e baixa o vídeo na melhor qualidade disponível e coloca tudo dentro da pasta Files que está na raiz do projeto. Os scripts são separados para facilitar o uso específico para cada plataforma:
 - **YTTheif.py**: Script para baixar vídeos do YouTube.
 - **IGTheif.py**: Script para baixar vídeos do Instagram.
 
@@ -30,14 +30,28 @@ Primeiro, você precisa ter o Python instalado. Para isso:
 
 ### 2. Instalar Bibliotecas Necessárias
 
-No terminal ou prompt de comando, use o seguinte comando para instalar o `yt_dlp`:
+Para manter sua instalação organizada e evitar conflitos com instalações globais, é altamente recomendado o uso de um ambiente virtual. Siga as instruções abaixo para configurar o ambiente e instalar a biblioteca necessária:
 
-```bash
-pip install yt_dlp
-```
+#### a) Criação e Ativação do Ambiente Virtual
 
-Ou, se quiser instalar a lib no seu ambiente Venv e evitar que ela seja instalada globalmente, vá no terminal ou prompt de comando e use o seguinte comando para instalar o `yt_dlp`:
+1. Abra o terminal ou prompt de comando na raiz deste repositório.
+2. Crie um ambiente virtual executando:
+   ```bash
+   python -m venv venv
+   ```
+3. Ative o ambiente virtual (se funcionar, você verá escrito no seu terminal `(venv)`):
+   - **Windows:**
+     ```bash
+     source venv/Scripts/activate
+     ```
+   - **Linux/Mac:**
+     ```bash
+     source venv/bin/activate
+     ```
 
+#### b) Instalação do yt-dlp no Ambiente Virtual
+
+Com o ambiente virtual ativado, instale a biblioteca utilizando o comando:
 ```bash
 python -m pip install yt-dlp
 ```

@@ -5,7 +5,9 @@ def baixar_video(url):
     try:
         ydl_opts = {
             'format': 'best',
-            'outtmpl': '%(title)s.%(ext)s'
+            'outtmpl': 'Files/%(title)s.%(ext)s',
+            'socket_timeout': 30,  # tempo em segundos; aumente se tiver dando erro
+            # 'retries': 3          # número de tentativas, caso continue
         }
         
         pattern = re.compile(r'https://(www\.youtube\.com|youtu\.be)/.*')
@@ -22,7 +24,7 @@ def baixar_video(url):
         print("Deu um erro:", e)
 
 # Download single videos.
-urls = ["https://www.youtube.com/watch?v=ipacpzXHGjA"]
+urls = ["https://www.youtube.com/watch?v=EF889gHjZu8"]
 
 # Download multiple videos.    
 # urls = [
