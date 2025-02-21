@@ -6,7 +6,7 @@ def baixar_video(url):
         ydl_opts = {
             'format': 'best',
             'outtmpl': 'Files/%(title)s.%(ext)s',
-            'socket_timeout': 30,  # tempo em segundos; aumente se tiver dando erro
+            'socket_timeout': 30,   # tempo em segundos (aumente se tiver quebrando)
             # 'retries': 3          # número de tentativas, caso continue
         }
         

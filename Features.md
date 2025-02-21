@@ -10,3 +10,8 @@ CRIAR E CONFIGURAR AMBIENTE VIRTUAL PRA NÃO INSTALAR NADA GLOBALMENTE
 - source venv/Scripts/activate
 - python -m pip install yt-dlp 
 -->
+
+- Informar a necessidade de usar o FFMPEG e tualizar a documentação.
+
+- Instalar ffmpeg no ambiente virtual
+- Instalar yt-dlp no ambiente virtual
